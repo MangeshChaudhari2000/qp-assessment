@@ -10,7 +10,13 @@
 			"name": "AddGrocery",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "userType",
+						"value": "admin",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"name\":\"dragon Fruit\",\r\n    \"descripion\":\"Seet fruit not more any dragon with tale\",\r\n    \"price\":30,\r\n    \"stock\":100\r\n}",
@@ -42,7 +48,13 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "usertype",
+						"value": "admin",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"groceryItemId\":\"67b20aff0d13ea4aae7b587b\"\r\n}",
@@ -132,7 +144,13 @@
 			"name": "updateGroceryItem",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "usertype",
+						"value": "admin",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"groceryItemId\":\"67b20aff0d13ea4aae7b587b\",\r\n    \"name\":\"berry\"\r\n}",
@@ -161,7 +179,13 @@
 			"name": "manageGroceryItemStock",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "usertype",
+						"value": "admin",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"groceryItemId\":\"67b20aff0d13ea4aae7b587b\",\r\n    \"newStock\":90\r\n}",

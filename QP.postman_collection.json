@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "b68855be-b2b9-450e-8944-f1081672431d",
+		"name": "QP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33991255"
+	},
+	"item": [
+		{
+			"name": "AddGrocery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"dragon Fruit\",\r\n    \"descripion\":\"Seet fruit not more any dragon with tale\",\r\n    \"price\":30,\r\n    \"stock\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/grocery/addGroceryItem",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"grocery",
+						"addGroceryItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getGroceryItem",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"groceryItemId\":\"67b20aff0d13ea4aae7b587b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/grocery/getGroceryItem",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"grocery",
+						"getGroceryItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllGroceryItem",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"groceryItemId\":\"67b20aff0d13ea4aae7b587b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/grocery/getAllGroceryItem",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"grocery",
+						"getAllGroceryItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteGroceryItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"groceryItemId\":\"67b20aff0d13ea4aae7b587b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/grocery/deleteGroceryItem",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"grocery",
+						"deleteGroceryItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateGroceryItem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"groceryItemId\":\"67b20aff0d13ea4aae7b587b\",\r\n    \"name\":\"berry\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/grocery/updateGroceryItem",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"grocery",
+						"updateGroceryItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manageGroceryItemStock",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"groceryItemId\":\"67b20aff0d13ea4aae7b587b\",\r\n    \"newStock\":90\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/grocery/manageGroceryItemStock",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"grocery",
+						"manageGroceryItemStock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orderGrocery",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"groceryItemId\":\"67b20aff0d13ea4aae7b587b\",\r\n    \"quantity\":90\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/order/orderGrocery",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"order",
+						"orderGrocery"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
